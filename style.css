@@ -1,0 +1,181 @@
+
+
+:root{
+    --colorVinotinto: #7c1b14dc;
+    --colorRosadoOCrema: #db7c7cd2;
+    --colorVinitintoClaro: #a02a39;
+    --colorDorado: #cba636e0;
+    --colorDoradoOscuro: #cba636e1;
+    --colorBlanco: #ffffffe5;
+
+    --colorGris: #8c8587;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+
+body{
+    background: url(img/img-01.jpg) content-box center no-repeat;
+    background-size: cover;
+}
+
+.container-main{
+    /* border: solid 3px red; */
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: gray 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--colorBlanco);
+}
+
+
+.logo img{
+    /* border: solid 3px red; */
+    width: 290px;
+}
+.navbar h1{
+    /* border: solid 3px red; */
+    padding: 2%;
+    text-align: center;
+    color: var(--colorVinitintoClaro);
+}
+
+/* views */
+.cont-main-views{
+    /* border: solid 1px red; */
+    width: 90%;
+    height: 76vh;
+    max-height: 76vh;
+    /* background: url(img/img-01.jpg) content-box center no-repeat;
+    background-size: cover; */
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.mensaje-welcome{
+    color: var(--colorVinitintoClaro);
+    /* font-size: 25px; */
+}
+
+.cont-cover-main{
+    /* border: solid 1px blue; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* backdrop-filter: brightness(70%); */
+    
+}
+.mensaje_info{
+    /* background: linear-gradient(var(--colorDorado) 90%, var(--colorDoradoOscuro) 10%); */
+    width: 95%;
+    border-radius: 15px;
+    padding: 1%;
+    /* box-shadow: #424242  2px 2px 8px; */
+    color: #000;
+    /* text-shadow: #0c0c0c 1px 1px 5px; */
+    font-size: 22px;
+    text-align: justify;
+    border-left: solid 2px var(--colorVinitintoClaro) ;
+    border-right: solid 2px var(--colorVinitintoClaro) ;
+}
+.botones{
+    border: solid 2px var(--colorBlanco);
+    width: 400px;
+    color: var(--colorVinitintoClaro);
+    /* background: linear-gradient(var(--colorVinotinto), var(--colorRosadoOCrema)); */
+    background: var(--colorBlanco);
+    font-weight: 600;
+    font-size: 40px;
+    
+    box-shadow: 2px 2px 5px #424242 ,  -2px -2px 20px white;
+    margin: 1%;
+    border-radius: 35px;
+}
+
+.botones:hover, .btn-volver:hover{
+    background: var(--colorVinotinto);
+    color: var(--colorBlanco);
+    border: 2px solid var(--colorRosadoOCrema);
+}
+.botones:active, .btn-volver:active{
+    background: var(--colorVinitintoClaro) !important;
+    color: var(--colorBlanco) !important;
+    border: solid 2px var(--colorBlanco);
+}
+.btn-volver{
+    position: absolute;
+    top: 15vh;
+    right: 15vh;
+    background: var(--colorDorado);
+    color: var(--colorBlanco);
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px #424242 ,  -2px -2px 20px white;
+    margin: 1%;
+    padding: 1%; 
+}
+
+/* blocks view */
+.cont-view-blocks, .cont-blocks{
+    display: flex;
+}
+.cont-view-blocks{
+    /* border: solid 1px ; */
+    width: 100%;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: brightness(70%); */
+    padding: 7.25%;
+}
+
+.cont-blocks{
+    /* border: solid 1px red; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+/* blocks view end */
+
+/* Block 12 */
+.cont-view-block-12{
+    width: 100%;
+    /* border: solid 2px red; */
+}
+.cont-info-block{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-block{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--colorVinitintoClaro);
+    /* background: var(--colorGris); */
+    text-shadow: var(--colorBlanco) 0 0 1px;
+    border-radius: 30px;
+    padding: 1%;
+}
+/* END Block 12 */
+
+
+
+/* views end */
