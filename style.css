@@ -6,7 +6,7 @@
     --colorVinitintoClaro: #a02a39;
     --colorDorado: #cba636e0;
     --colorDoradoOscuro: #cba636e1;
-    --colorBlanco: #ffffffe5;
+    --colorBlanco: #ffffffc5;
 
     --colorGris: #8c8587;
 }
@@ -34,15 +34,20 @@ body{
     background: var(--colorBlanco);
 }
 
-
+.navbar{
+    /* border: solid 3px red; */
+    width: 90%;
+}
 .logo img{
     /* border: solid 3px red; */
     width: 290px;
 }
+
 .navbar h1{
     /* border: solid 3px red; */
     padding: 2%;
     text-align: center;
+    font-weight: bold;
     color: var(--colorVinitintoClaro);
 }
 
@@ -84,23 +89,25 @@ body{
     /* box-shadow: #424242  2px 2px 8px; */
     color: #000;
     /* text-shadow: #0c0c0c 1px 1px 5px; */
-    font-size: 22px;
+    font-size: 25px;
     text-align: justify;
     border-left: solid 2px var(--colorVinitintoClaro) ;
     border-right: solid 2px var(--colorVinitintoClaro) ;
 }
 .botones{
     border: solid 2px var(--colorBlanco);
-    width: 400px;
+    width: 406px;
     color: var(--colorVinitintoClaro);
     /* background: linear-gradient(var(--colorVinotinto), var(--colorRosadoOCrema)); */
     background: var(--colorBlanco);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 55px;
     
     box-shadow: 2px 2px 5px #424242 ,  -2px -2px 20px white;
     margin: 1%;
     border-radius: 35px;
+    padding: 1%;
+    
 }
 
 .botones:hover, .btn-volver:hover{
