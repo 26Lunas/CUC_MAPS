@@ -66,16 +66,23 @@ function mapaEntrada1(){
     cont_entrada1.classList.toggle("ocultar");
     let modal_content_entrada1 = document.getElementById("modal-content");
     modal_content_entrada1.classList.toggle("ocultar");
-    tiempo_entrada1 = setTimeout(() => {
-        mapaEntrada1()
-    }, 10000);
+    let btn_close_b12 = document.getElementById("btn-close-b12");
+    btn_close_b12.classList.toggle("ocultar");
+
+    // tiempo_entrada1 = setTimeout(() => {
+    //     mapaEntrada1()
+    // }, 10000);
     
-    setTimeout(() => {
-        clearTimeout(tiempo_entrada1);
-    }, 10500);
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada1);
+    // }, 10500);
 }
 let btn_entrada_1 = document.getElementById("entrada1-bloque12");
 btn_entrada_1.addEventListener("click", () => {
+    mapaEntrada1()
+});
+let btn_close_b12 = document.getElementById("btn-close-b12");
+btn_close_b12.addEventListener("click", () => {
     mapaEntrada1()
 });
 
@@ -86,16 +93,22 @@ function mapaEntrada2(){
     cont_entrada2.classList.toggle("ocultar");
     let modal_content_entrada2 = document.getElementById("modal-content");
     modal_content_entrada2.classList.toggle("ocultar");
-    tiempo_entrada2 = setTimeout(() => {
-        mapaEntrada2()
-    }, 10000);
+    let btn_close_b12 = document.getElementById("btn-close-2-b12");
+    btn_close_b12.classList.toggle("ocultar");
+    // tiempo_entrada2 = setTimeout(() => {
+    //     mapaEntrada2()
+    // }, 10000);
     
-    setTimeout(() => {
-        clearTimeout(tiempo_entrada2);
-    }, 10500);
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada2);
+    // }, 10500);
 }
 let btn_entrada_2 = document.getElementById("entrada2-bloque12");
 btn_entrada_2.addEventListener("click", () => {
+    mapaEntrada2()
+});
+let btn_close_2_b12 = document.getElementById("btn-close-2-b12");
+btn_close_2_b12.addEventListener("click", () => {
     mapaEntrada2()
 });
 
@@ -129,16 +142,23 @@ function mapaEntrada1_b11(){
     let modal_content_entrada1 = document.getElementById("modal-content-b11");
     modal_content_entrada1.classList.toggle("ocultar");
 
-    tiempo_entrada1_b11 = setTimeout(() => {
-        mapaEntrada1_b11()
-    }, 10000);
+    let btn_close_b11 = document.getElementById("btn-close-1-b11");
+    btn_close_b11.classList.toggle("ocultar");
+
+    // tiempo_entrada1_b11 = setTimeout(() => {
+    //     mapaEntrada1_b11()
+    // }, 10000);
     
-    setTimeout(() => {
-        clearTimeout(tiempo_entrada1_b11);
-    }, 10500);
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada1_b11);
+    // }, 10500);
 }
 let btn_entrada_1_b11 = document.getElementById("entrada1-bloque11");
 btn_entrada_1_b11.addEventListener("click", () => {
+    mapaEntrada1_b11()
+});
+let btn_close_1_b11 = document.getElementById("btn-close-1-b11");
+btn_close_1_b11.addEventListener("click", () => {
     mapaEntrada1_b11()
 });
 
@@ -150,17 +170,23 @@ function mapaEntrada2_b11(){
     let modal_content_entrada2 = document.getElementById("modal-content-b11");
     modal_content_entrada2.classList.toggle("ocultar");
 
-    tiempo_entrada2 = setTimeout(() => {
-        mapaEntrada2_b11()
-    }, 10000);
+    let btn_close_2_b11 = document.getElementById("btn-close-2-b11");
+    btn_close_2_b11.classList.toggle("ocultar");
+    // tiempo_entrada2 = setTimeout(() => {
+    //     mapaEntrada2_b11()
+    // }, 10000);
     
-    setTimeout(() => {
-        clearTimeout(tiempo_entrada2_b11);
-    }, 10500);
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada2_b11);
+    // }, 10500);
 }
 let btn_entrada_2_b11 = document.getElementById("entrada2-bloque11");
 btn_entrada_2_b11.addEventListener("click", () => {
     mapaEntrada2_b11();
+});
+let btn_close_2_b11 = document.getElementById("btn-close-2-b11");
+btn_close_2_b11.addEventListener("click", () => {
+    mapaEntrada2_b11()
 });
 
 //END

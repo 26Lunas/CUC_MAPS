@@ -213,7 +213,16 @@ body{
 /* Modal */
 
 .btn-close{
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    /* border: solid 3px red; */
     background: var(--colorVinitintoClaro);
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 1%;
+    padding-top: .5%;
 }
 .modal-dialog{
    display: flex;
