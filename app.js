@@ -191,6 +191,81 @@ btn_close_2_b11.addEventListener("click", () => {
 
 //END
 
+
+//Block 8
+let btn_block_8 = document.getElementById("boton-8");
+    btn_block_8.addEventListener("click", () => {
+        viewBlock8();
+    });
+function viewBlock8(){
+    let cont_block_8 = document.getElementById("cont_block-8");
+        cont_block_8.classList.toggle("ocultar");
+
+    let cont_view_blcks = document.getElementById("cont_view_blocks");
+    cont_view_blcks.classList.toggle("ocultar");
+}
+let btn_volver_contViewBlocks8 = document.getElementById("btn_volver_contViewBlocks-8");
+btn_volver_contViewBlocks8.addEventListener("click", () => {
+   viewBlock8();
+
+})
+
+//Mostrar mapa de ruta 1 b8
+let tiempo_entrada1_b8;
+function mapaEntrada1_b8(){
+    let cont_entrada1_b8 = document.getElementById("cont-img-ruta-1-b8");
+    cont_entrada1_b8.classList.toggle("ocultar");
+    let modal_content_entrada1 = document.getElementById("modal-content-b8");
+    modal_content_entrada1.classList.toggle("ocultar");
+
+    let btn_close_1_b8 = document.getElementById("btn-close-1-b8");
+    btn_close_1_b8.classList.toggle("ocultar");
+    // tiempo_entrada1_b8 = setTimeout(() => {
+    //     mapaEntrada1_b8()
+    // }, 10000);
+    
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada1_b8);
+    // }, 10500);
+}
+let btn_entrada_1_b8 = document.getElementById("entrada1-bloque8");
+btn_entrada_1_b8.addEventListener("click", () => {
+    mapaEntrada1_b8()
+});
+let btn_close_1_b8 = document.getElementById("btn-close-1-b8");
+btn_close_1_b8.addEventListener("click", () => {
+    mapaEntrada1_b8()
+});
+
+
+//Mostrar mapa de ruta 2 b8
+let tiempo_entrada2_b8;
+function mapaEntrada2_b8(){
+    let cont_entrada2 = document.getElementById("cont-img-ruta-2-b8");
+    cont_entrada2.classList.toggle("ocultar");
+    let modal_content_entrada2 = document.getElementById("modal-content-b8");
+    modal_content_entrada2.classList.toggle("ocultar");
+
+    let btn_close_2_b8 = document.getElementById("btn-close-2-b8");
+    btn_close_2_b8.classList.toggle("ocultar");
+    // tiempo_entrada2_b8= setTimeout(() => {
+    //     mapaEntrada2_b8()
+    // }, 10000);
+    
+    // setTimeout(() => {
+    //     clearTimeout(tiempo_entrada2_b8);
+    // }, 10500);
+}
+let btn_entrada_2_b8 = document.getElementById("entrada2-bloque8");
+btn_entrada_2_b8.addEventListener("click", () => {
+    mapaEntrada2_b8();
+});
+let btn_close_2_b8 = document.getElementById("btn-close-2-b8");
+btn_close_2_b8.addEventListener("click", () => {
+    mapaEntrada2_b8()
+});
+//END
+
 //Block 7
 let btn_block_7 = document.getElementById("boton-7");
     btn_block_7.addEventListener("click", () => {
@@ -264,6 +339,8 @@ btn_close_2_b7.addEventListener("click", () => {
     mapaEntrada2_b7()
 });
 //END
+
+
 //Block 5
 let btn_block_5 = document.getElementById("boton-5");
     btn_block_5.addEventListener("click", () => {
