@@ -211,9 +211,7 @@ body{
 
 
 /* Modal */
-.modal{
-    /* border: solid 2px red; */
-}
+
 .btn-close{
     background: var(--colorVinitintoClaro);
 }
