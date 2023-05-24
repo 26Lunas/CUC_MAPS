@@ -1,229 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap 5.3 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap 5.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
 
 
-    <title>CUC MAPS</title>
+  <title>CUC MAPS</title>
 </head>
+
 <body>
-    <div class="container-main">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt=""></a>
-              <h1>CUC MAPS</h1>
-            </div>
-          </nav>
+  <div class="container-main">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt=""></a>
+        <h1>CUC MAPS</h1>
+      </div>
+    </nav>
 
-          <!-- View container -->
-          <div class="cont-main-views">
+    <!-- View container -->
+    <div class="cont-main-views">
 
-            <!-- Contains the main view -->
-            <div class="cont-cover-main" id="cont_cover_main">
+      <!-- Contains the main view -->
+      <div class="cont-cover-main" id="cont_cover_main">
 
-              <p class="mensaje_info">
-                <strong class="mensaje-welcome">¡Bienvenidos estudiantes y visitantes de la Universidad de la Costa!</strong>  ¡Ahora es más fácil navegar por nuestra universidad gracias a nuestro nuevo mapa interactivo! Diseñado especialmente para ayudar a los nuevos estudiantes y visitantes a encontrar los edificios y servicios que necesitan de manera rápida y eficiente.
-                ¡Mejora tu experiencia en nuestra universidad con nuestro mapa interactivo fácil de usar!
-              </p>
-              <button class="btn botones" id="btn_main">Bloques</button>
-             
-              <button class="btn botones">Servicios</button>
+        <p class="mensaje_info">
+          <strong class="mensaje-welcome">¡Bienvenidos estudiantes y visitantes de la Universidad de la Costa!</strong>
+          ¡Ahora es más fácil navegar por nuestra universidad gracias a nuestro nuevo mapa interactivo! Diseñado
+          especialmente para ayudar a los nuevos estudiantes y visitantes a encontrar los edificios y servicios que
+          necesitan de manera rápida y eficiente.
+          ¡Mejora tu experiencia en nuestra universidad con nuestro mapa interactivo fácil de usar!
+        </p>
+        <button class="btn botones" id="btn_main">Bloques</button>
 
-            </div>
+        <button class="btn botones" id="btn_servicios">Servicios</button>
 
-            <!-- contains the blocks -->
+      </div>
 
-            <div class="cont-view-blocks ocultar" id="cont_view_blocks">
-              <div class="btn btn-volver" id="btn_volver_main_contViewBlocks">&LeftArrow;</div>
-              <div class="cont-blocks">
-                <button class="btn botones" id="boton-1">Bloque 1</button>
-                <button class="btn botones" id="boton-2">Bloque 2</button>
-                <button class="btn botones" id="boton-3" disabled>Bloque 3</button>
-                <button class="btn botones" id="boton-4" disabled>Bloque 4</button>
-                <button class="btn botones" id="boton-5">Bloque 5</button>
-                <button class="btn botones" id="boton-6" disabled>Bloque 6</button>
-                <button class="btn botones" id="boton-7">Bloque 7</button>
-                <button class="btn botones" id="boton-8" disabled>Bloque 8</button>
-                <button class="btn botones" id="boton-9" disabled>Bloque 9</button>
-                <button class="btn botones" id="boton-10" disabled>Bloque 10</button>
-                <button class="btn botones" id="boton-11">Bloque 11</button>
-                <button class="btn botones" id="boton-12">Bloque 12</button>
-                <button class="btn botones" id="boton-E">Bloque E</button>
-                <button class="btn botones" id="boton-otros">Otros</button>
-              </div>
-
-            </div>
-
-            <!-- contains the blocks end -->
-
-            <div class="cont-view-block-12 ocultar" id="cont_block-12">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 12</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Laboratorio resistencia materiales</li>
-                    <li>Laboratorio tratamiento de aguas</li>
-                    <li>Laboratorio creatividad y desarrollo</li>
-                    <li>Laboratorio mecánico de fluidos</li>
-                    <li>Laboratorio electrónica</li>
-                    <li>Laboratorio innovación</li>
-                    <li>Laboratorio metrología</li>
-                    <li>Laboratorio Maquinas eléctricas</li>
-                    <li>Laboratorio construcción</li>
-                    <li>Laboratorio historia del arte</li>
-                    <li>Laboratorio Pruebas psicológicas</li>
-                    <li>Laboratorio Telecomunicaciones</li>
-                    <li>Laboratorio urbano ambiental</li>
-                    <li>Laboratorio Física mecánica</li>
-                    <li>Laboratorio sistemas eléctricos</li>
-                    <li>Sala de dibujo</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- container the block 11 -->
-            <div class="cont-view-block-11 ocultar" id="cont_block-11">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-11">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 11</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Sala de fundadores</li>
-                    <li>Salas de conferencias</li>
-                    <li>Salas de lectura</li>
-                    <li>Pre bienestar y posgrado</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block 11 -->
-            <!-- container the block 7 -->
-            <div class="cont-view-block-7 ocultar" id="cont_block-7">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-7">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 7</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Facultad de psicología </li>
-                    <li>Facultad de derecho</li>
-                    <li>Ciencias económicas</li>
-                    <li>Sala de audiencias</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block 7 -->
-            <!-- container the block 5 -->
-            <div class="cont-view-block-5 ocultar" id="cont_block-5">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-5">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 5</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Jóvenes investigadores</li>
-                    <li>Módulos profesores TC</li>
-                    <li>Enfermería</li>
-                    <li>Recepción enfermería</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block 5 -->
-
-            <!-- container the block 2 -->
-            <div class="cont-view-block-2 ocultar" id="cont_block-2">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-2">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 2</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Biblioteca piso 1</li>
-                    <li>Biblioteca piso 2</li>
-                    <li>Sala Mac</li>
-                    <li>U.N.I.C.A</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block 5 -->
-
-            <!-- container the block 1 -->
-            <div class="cont-view-block-1 ocultar" id="cont_block-1">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-1">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque 1</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Oficina vicerrectoría</li>
-                    <li>Oficina rectoría</li>
-                    <li>Salas</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block 5 -->
-
-            <!-- container the block E -->
-            <div class="cont-view-block-E ocultar" id="cont_block-E">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-E">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Bloque E</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Salón de diseño</li>
-                    <li>CED</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block E -->
-            <!-- container the block Otros -->
-            <div class="cont-view-block-otros ocultar" id="cont_block-otros">
-              <div class="btn btn-volver" id="btn_volver_contViewBlocks-otros">&LeftArrow;</div>
-              <div class="cont-info-block">
-                <p class="title-block">Otros</p>
-                <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
-                <div class="mensaje_info">
-                  <ul>
-                    <li>Coliseo de competencias</li>
-                    <li>Central</li>
-                    <li>Mi terraza</li>
-                    <li>Cancha multiple</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End block otros -->
-
+      <!-- contains services -->
+      <div class="cont-services ocultar" id="cont-services">
+        <div class="btn btn-volver" id="btn_volver_main_contServices">&LeftArrow;</div>
+        <p class="title-block">Servicios</p>
+        <div class="mensaje_info">
+          <div class="mensaje_service">
+            <ul>
+              <h3>Bloque 1</h3>
+              <li>Oficina vicerrectoría</li>
+              <li>Oficina rectoría</li>
+              <h3>Bloque 2</h3>
+              <li>Biblioteca piso 1</li>
+              <li>Biblioteca piso 2</li>
+            </ul>
+            <ul>
+              <h3>Bloque 5</h3>
+              <li>Enfermería</li>
+              <li>CED</li>
+              <h3>Bloque 7</h3>
+              <li>Facultad de psicología</li>
+              <li>Facultad de derecho</li>
+              <li>Facultad ciencias económicas</li>
+            </ul>
+            <ul>
+              <h3>Bloque 8</h3>
+              <li>Bienestar estudiantil</li>
+              <h3>Bloque 11</h3>
+              <li>Pre bienestar</li>
+              <li>Posgrado</li>
+            </ul>
           </div>
+        </div>
+      </div>
+
+      <!-- contains the blocks -->
+
+      <div class="cont-view-blocks ocultar" id="cont_view_blocks">
+        <div class="btn btn-volver" id="btn_volver_main_contViewBlocks">&LeftArrow;</div>
+        <div class="cont-blocks">
+          <button class="btn botones" id="boton-1">Bloque 1</button>
+          <button class="btn botones" id="boton-2">Bloque 2</button>
+          <button class="btn botones" id="boton-3" disabled>Bloque 3</button>
+          <button class="btn botones" id="boton-4" disabled>Bloque 4</button>
+          <button class="btn botones" id="boton-5">Bloque 5</button>
+          <button class="btn botones" id="boton-6" disabled>Bloque 6</button>
+          <button class="btn botones" id="boton-7">Bloque 7</button>
+          <button class="btn botones" id="boton-8" disabled>Bloque 8</button>
+          <button class="btn botones" id="boton-9" disabled>Bloque 9</button>
+          <button class="btn botones" id="boton-10" disabled>Bloque 10</button>
+          <button class="btn botones" id="boton-11">Bloque 11</button>
+          <button class="btn botones" id="boton-12">Bloque 12</button>
+          <button class="btn botones" id="boton-E">Bloque E</button>
+          <button class="btn botones" id="boton-otros">Otros</button>
+        </div>
+
+      </div>
+
+      <!-- contains the blocks end -->
+
+      <div class="cont-view-block-12 ocultar" id="cont_block-12">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 12</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Laboratorio resistencia materiales</li>
+              <li>Laboratorio tratamiento de aguas</li>
+              <li>Laboratorio creatividad y desarrollo</li>
+              <li>Laboratorio mecánico de fluidos</li>
+              <li>Laboratorio electrónica</li>
+              <li>Laboratorio innovación</li>
+              <li>Laboratorio metrología</li>
+              <li>Laboratorio Maquinas eléctricas</li>
+              <li>Laboratorio construcción</li>
+              <li>Laboratorio historia del arte</li>
+              <li>Laboratorio Pruebas psicológicas</li>
+              <li>Laboratorio Telecomunicaciones</li>
+              <li>Laboratorio urbano ambiental</li>
+              <li>Laboratorio Física mecánica</li>
+              <li>Laboratorio sistemas eléctricos</li>
+              <li>Sala de dibujo</li>
+            </ul>
+          </div>
+          <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b12.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b12.jpg" alt="">
+              </div>
+              <div class="modal-content" id="modal-content">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque12"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque12"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+        </div>
+      </div>
+
+      <!-- container the block 11 -->
+      <div class="cont-view-block-11 ocultar" id="cont_block-11">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-11">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 11</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#modalBloque11"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Sala de fundadores</li>
+              <li>Salas de conferencias</li>
+              <li>Salas de lectura</li>
+              <li>Pre bienestar y posgrado</li>
+            </ul>
+          </div>
+
+          <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modalBloque11" tabindex="-1" aria-labelledby="modalBloque11"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1-b11">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b11.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b11">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b11.jpg">
+              </div>
+              <div class="modal-content" id="modal-content-b11">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalBloque11">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque11"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque11"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+        </div>
+      </div>
+      <!-- End block 11 -->
+      <!-- container the block 7 -->
+      <div class="cont-view-block-7 ocultar" id="cont_block-7">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-7">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 7</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#modalBloque7"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Facultad de psicología </li>
+              <li>Facultad de derecho</li>
+              <li>Ciencias económicas</li>
+              <li>Sala de audiencias</li>
+            </ul>
+          </div>
+
+           <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modalBloque7" tabindex="-1" aria-labelledby="modalBloque7"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1-b7">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b7.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b7">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b7.jpg">
+              </div>
+              <div class="modal-content" id="modal-content-b7">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalBloque11">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque7"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque7"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+        </div>
+      </div>
+      <!-- End block 7 -->
+      <!-- container the block 5 -->
+      <div class="cont-view-block-5 ocultar" id="cont_block-5">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-5">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 5</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#modalBloque5"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Jóvenes investigadores</li>
+              <li>Módulos profesores TC</li>
+              <li>Enfermería</li>
+              <li>Recepción enfermería</li>
+            </ul>
+          </div>
+
+           <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modalBloque5" tabindex="-1" aria-labelledby="modalBloque5"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1-b5">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b5.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b5">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b5.jpg">
+              </div>
+              <div class="modal-content" id="modal-content-b5">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalBloque11">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque5"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque5"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+
+        </div>
+      </div>
+      <!-- End block 5 -->
+
+      <!-- container the block 2 -->
+      <div class="cont-view-block-2 ocultar" id="cont_block-2">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-2">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 2</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#modalBloque2"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Biblioteca piso 1</li>
+              <li>Biblioteca piso 2</li>
+              <li>Sala Mac</li>
+              <li>U.N.I.C.A</li>
+            </ul>
+          </div>
+
+          <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modalBloque2" tabindex="-1" aria-labelledby="modalBloque2"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1-b2">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b2.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b2">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b2.jpg">
+              </div>
+              <div class="modal-content" id="modal-content-b2">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-2" id="modalBloque2">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque2"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque2"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+        </div>
+      </div>
+      <!-- End block 2 -->
+
+      <!-- container the block 1 -->
+      <div class="cont-view-block-1 ocultar" id="cont_block-1">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-1">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque 1</p>
+          <div class="btn botones" type="button" data-bs-toggle="modal" data-bs-target="#modalBloque1"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+
+          <div class="mensaje_info">
+            <ul>
+              <li>Oficina vicerrectoría</li>
+              <li>Oficina rectoría</li>
+              <li>Salas</li>
+            </ul>
+          </div>
+
+
+          <!-- Rutas modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="modalBloque1" tabindex="-1" aria-labelledby="modalBloque1"
+            aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="modal-dialog">
+              <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1-b1">
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b1.jpg" >
+              </div>
+              <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b1">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b1.jpg">
+              </div>
+              <div class="modal-content" id="modal-content-b1">
+                
+                <div class="modal-header">
+                  <h1 class="modal-title fs-1" id="modalBloque1">SELECCIONE LA RUTA QUE DESEA</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <div class="cont-botonesEntrada">
+                    <div class="btn botones" id="entrada1-bloque1"><i class="fa-solid fa-map-location-dot"></i> Entrada 1</div>
+                    <div class="btn botones" id="entrada2-bloque1"><i class="fa-solid fa-map-location-dot"></i> Entrada 2</div>
+                  </div>
+                 
+                  
+                  
+                </div>
+            
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin modal rutas -->
+
+
+        </div>
+      </div>
+      <!-- End block 1 -->
+
+      <!-- container the block E -->
+      <div class="cont-view-block-E ocultar" id="cont_block-E">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-E">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Bloque E</p>
+          <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+          <div class="mensaje_info">
+            <ul>
+              <li>Salón de diseño</li>
+              <li>CED</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End block E -->
+      <!-- container the block Otros -->
+      <div class="cont-view-block-otros ocultar" id="cont_block-otros">
+        <div class="btn btn-volver" id="btn_volver_contViewBlocks-otros">&LeftArrow;</div>
+        <div class="cont-info-block">
+          <p class="title-block">Otros</p>
+          <div class="btn botones"><i class="fa-solid fa-map-location-dot"></i> Ruta</div>
+          <div class="mensaje_info">
+            <ul>
+              <li>Coliseo de competencias</li>
+              <li>Central</li>
+              <li>Mi terraza</li>
+              <li>Cancha multiple</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End block otros -->
 
     </div>
 
+  </div>
 
-    <!-- Js Bootstrap 5.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS -->
-    <script src="app.js"></script>
+  <!-- Js Bootstrap 5.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/34c89acf97.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="app.js"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/34c89acf97.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

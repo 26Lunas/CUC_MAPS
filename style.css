@@ -81,6 +81,15 @@ body{
     /* backdrop-filter: brightness(70%); */
     
 }
+.cont-services{
+    width: 100%;
+    /* border: solid 1px blue; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .mensaje_info{
     /* background: linear-gradient(var(--colorDorado) 90%, var(--colorDoradoOscuro) 10%); */
     width: 95%;
@@ -93,6 +102,20 @@ body{
     text-align: justify;
     border-left: solid 2px var(--colorVinitintoClaro) ;
     border-right: solid 2px var(--colorVinitintoClaro) ;
+}
+.mensaje_service{
+    width: 100%;
+    /* border: solid 3px red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mensaje_service h3{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--colorVinitintoClaro);
 }
 .botones{
     border: solid 2px var(--colorBlanco);
@@ -183,6 +206,32 @@ body{
 }
 /* END Block 12 */
 
+
+/* Modal */
+.modal{
+    /* border: solid 2px red; */
+}
+.btn-close{
+    background: var(--colorVinitintoClaro);
+}
+.modal-dialog{
+    margin-top: 25vh;
+   
+}
+.cont-botonesEntrada{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.control-img img{
+    position: absolute;
+    bottom: -65vh !important;
+    left: -20vw;
+    width: 80%;
+    object-fit: cover;
+    width: 1000px !important;
+}
+/* Fin Modal */
 
 
 /* views end */
