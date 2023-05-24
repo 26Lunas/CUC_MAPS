@@ -218,8 +218,9 @@ body{
     background: var(--colorVinitintoClaro);
 }
 .modal-dialog{
-    margin-top: 25vh;
-   
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .cont-botonesEntrada{
     display: flex;
@@ -227,12 +228,15 @@ body{
     align-items: center;
 }
 .control-img img{
-    position: absolute;
-    bottom: -65vh !important;
-    left: -20vw;
-    width: 80%;
     object-fit: cover;
-    width: 1000px !important;
+    width: 100%;
+}
+.control-img{
+    z-index: 999;
+    /* border: solid 2px red; */
+    position: absolute !important;
+    top: 0;
+    width: 85vw;
 }
 /* Fin Modal */
 
