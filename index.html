@@ -11,6 +11,8 @@
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Ao Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   <title>CUC MAPS</title>
@@ -39,9 +41,9 @@
           necesitan de manera rápida y eficiente.
           ¡Mejora tu experiencia en nuestra universidad con nuestro mapa interactivo fácil de usar!
         </p>
-        <button class="btn botones" id="btn_main">Bloques</button>
+        <button class="btn botones" id="btn_main" data-aos="fade-up">Bloques</button>
 
-        <button class="btn botones" id="btn_servicios">Servicios</button>
+        <button class="btn botones" id="btn_servicios" >Servicios</button>
 
       </div>
 
@@ -85,7 +87,7 @@
         <div class="btn btn-volver" id="btn_volver_main_contViewBlocks">&LeftArrow;</div>
         <div class="cont-blocks">
           <button class="btn botones" id="boton-1">Bloque 1</button>
-          <button class="btn botones" id="boton-2">Bloque 2</button>
+          <button class="btn botones" id="boton-2" >Bloque 2</button>
           <button class="btn botones" id="boton-3" disabled>Bloque 3</button>
           <button class="btn botones" id="boton-4" disabled>Bloque 4</button>
           <button class="btn botones" id="boton-5">Bloque 5</button>
@@ -139,10 +141,10 @@
             
             <div class="modal-dialog">
               <div class="cont-img-ruta-1 control-img ocultar" id="cont-img-ruta-1">
-                <img src="img/ruta-entrada-1/ruta-entrada-1-b12.jpg" >
+                <img src="img/ruta-entrada-1/ruta-entrada-1-b12.jpg" data-aos="zoom-in">
               </div>
               <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2">
-                <img src="img/ruta-entrada-2/ruta-entrada-2-b12.jpg" alt="">
+                <img src="img/ruta-entrada-2/ruta-entrada-2-b12.jpg" data-aos="zoom-in" alt="">
               </div>
               <div class="modal-content" id="modal-content">
                 
@@ -250,7 +252,7 @@
                 <img src="img/ruta-entrada-1/ruta-entrada-1-b10.jpg" >
               </div>
               <div class="cont-img-ruta-2 control-img ocultar" id="cont-img-ruta-2-b10">
-                <img src="img/ruta-entrada-2/ruta-entrada-2-b10.jpg" alt="No esta disponible">
+                <img src="" alt="No esta disponible">
               </div>
               <div class="modal-content" id="modal-content-b10">
                 
@@ -651,11 +653,19 @@
   <!-- Js Bootstrap 5.3 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+ 
   <!-- JS -->
   <script src="app.js"></script>
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/34c89acf97.js" crossorigin="anonymous"></script>
+
+   <!-- Ao Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
